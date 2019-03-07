@@ -3,12 +3,10 @@ import data from '../data.json';
 
 class ProductRow extends Component {
 
-  state = {
-    data: data
-  }
 
   showProducts = () =>{
-    let product = this.state.data.data.map((item, key) => {
+    console.log(data)
+    let product = this.props.data4.data.map((item, key) => {
           return(
             <div className= 'item-row'>
               <li key={key}>{item.name}</li>

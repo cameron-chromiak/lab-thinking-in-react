@@ -10,18 +10,27 @@ import SearchBar from './components/SearchBar'
 class App extends Component {
 
   state = {
-    data: data
+    data: data,
+    originalData: data
   }
 
   onSearchSubmit = (term) => {
-    console.log(term);
-  }
+    let tempData = this.state.originalData.data.filter(item => item.name.includes(term));
+    console.log(term)
+    this.setState({
+      data: {data: tempData }
+    })
+}
+
 
 
   render() {
     return (
       <div className="App">
-        <SearchBar onSearchSubmit2={this.onSearchSubmit}/>
+        <FilterableProductTable data2={this.state.data}>
+            <SearchBar onSearchSubmit2={this.onSearchSubmit}/>
+        </FilterableProductTable>
+
       </div>
     );
   }

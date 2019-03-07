@@ -7,7 +7,8 @@ class ProductTable extends Component {
   render() {
     return (
       <div className="products">
-        <ProductRow/>
+        <ProductRow data4={this.props.data3}/>
+
           <div className="name-column">
             <h3>Name</h3>
 

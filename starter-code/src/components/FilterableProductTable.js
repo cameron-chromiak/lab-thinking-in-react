@@ -8,8 +8,9 @@ render() {
  return (
    <div className="product-table">
     <h1>IronStore</h1>
-     <SearchBar />
-     <ProductTable />
+    {this.props.children}
+
+     <ProductTable data3={this.props.data2} />
    </div>
  )
 }
