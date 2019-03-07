@@ -8,15 +8,12 @@ class ProductRow extends Component {
   }
 
   showProducts = () =>{
-    console.log(this.state.data);
     let product = this.state.data.data.map((item, key) => {
           return(
             <div className= 'item-row'>
               <li key={key}>{item.name}</li>
               <li key={key}>{item.price}</li>
             </div>
-
-
           )
       })
       return product
