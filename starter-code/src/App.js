@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import './App.css';
 import data from './data.json';
 import FilterableProductTable from './components/FilterableProductTable.js';
-import SearchBar from './components/SearchBar.js';
-import ProductTable from './components/ProductTable.js';
-import ProductRow from './components/ProductRow.js';
 
 
 
