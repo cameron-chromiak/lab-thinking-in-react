@@ -26,3 +26,36 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.product-table {
+  border: 3px solid orange;
+  margin: 20px;
+
+}
+
+.product-search {
+  border: 3px solid blue;
+  padding: 20px;
+  border-radius: 5%;
+  margin: 20px;
+}
+
+.products {
+  border: 3px solid green;
+  padding: 20px;
+  border-radius: 5%;
+  margin: 20px;
+}
+
+.name-column {
+  float: left;
+  width: 50%;
+}
+
+.price-column {
+  float: right;
+  width: 50%;
+}
+
+input {
+  margin: 5px;
+}
